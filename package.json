@@ -1,0 +1,34 @@
+{
+  "name": "google-maps-draw",
+  "version": "0.0.0",
+  "description": "Fully featured drawing toolbox control for Google Maps API",
+  "main": "dist/google-maps-draw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel -w -t --modules umd lib/index.js --out-file dist/google-maps-draw.js",
+    "dist": "babel --modules umd lib/index.js --out-file dist/google-maps-draw.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppGeo/google-maps-draw.git"
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "draw",
+    "control",
+    "tools",
+    "measurement",
+    "area",
+    "selection"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AppGeo/google-maps-draw/issues"
+  },
+  "homepage": "https://github.com/AppGeo/google-maps-draw",
+  "devDependencies": {
+    "babel": "^4.7.7"
+  }
+}
