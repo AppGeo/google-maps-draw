@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "jshint lib",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel -w -t --modules umd lib/index.js --out-file dist/google-maps-draw.js",
-    "dist": "babel --modules umd lib/index.js --out-file dist/google-maps-draw.js"
+    "dev": "npm run lint && watchify lib/index.js --debug -s google-maps-draw -t babelify --outfile dist/google-maps-draw.js",
+    "dist": "npm run lint && browserify lib/index.js -s google-maps-draw -t babelify --outfile dist/google-maps-draw.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,9 @@
   },
   "homepage": "https://github.com/AppGeo/google-maps-draw",
   "devDependencies": {
-    "babel": "^4.7.7",
-    "jshint": "^2.6.3"
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "jshint": "^2.6.3",
+    "watchify": "^2.4.0"
   }
 }
