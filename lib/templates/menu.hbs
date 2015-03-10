@@ -1,0 +1,11 @@
+<div id="google-maps-draw-{{millis}}" class="draw-toolbox draw-toolbox-{{orientation}}">
+  <div class="collapse">Draw</div>
+
+  <ul class="list collapsed">
+    {{#each enabledModes}}
+      <li>
+        <a href="#" class="trigger-mode" data-mode-id="{{id}}">{{id}}</a>
+      </li>
+    {{/each}}
+  </ul>
+</div>

@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "jshint lib",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run lint && watchify lib/index.js --debug -s google-maps-draw -t babelify --outfile dist/google-maps-draw.js",
-    "dist": "npm run lint && browserify lib/index.js -s google-maps-draw -t babelify --outfile dist/google-maps-draw.js"
+    "dev": "npm run lint && watchify lib/index.js --debug -s google-maps-draw -t babelify -t lessify -t hbsfy --outfile dist/google-maps-draw.js",
+    "dist": "npm run lint && browserify lib/index.js -s google-maps-draw -t babelify -t lessify -t hbsfy --outfile dist/google-maps-draw.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,10 @@
   "devDependencies": {
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
+    "handlebars": "^1.3.0",
+    "hbsfy": "^2.2.1",
     "jshint": "^2.6.3",
+    "lessify": "^1.0.0",
     "watchify": "^2.4.0"
   }
 }

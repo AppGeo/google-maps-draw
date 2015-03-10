@@ -1,0 +1,51 @@
+.draw-toolbox {
+  margin: 5px;
+  direction: ltr;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  color: #565656;
+  font-family: Roboto, Arial, sans-serif;
+  -webkit-user-select: none;
+  font-size: 11px;
+  -webkit-background-clip: padding-box;
+  border-width: 1px 1px 1px 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.14902);
+  border-right-color: rgba(0, 0, 0, 0.14902);
+  border-bottom-color: rgba(0, 0, 0, 0.14902);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  background-color: #FFF;
+  background-clip: padding-box;
+
+  &.draw-toolbox-horizontal li {
+    display: inline-block;
+  }
+
+  .collapse {
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  ul.list {
+    padding: 0;
+    margin: 0;
+
+    &.collapsed {
+      display: none;
+    }
+
+    > li {
+      list-style-type: none;
+    }
+  }
+
+  a {
+    padding: 4px;
+    display: block;
+    text-align: center;
+  }
+}
