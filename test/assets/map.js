@@ -10,5 +10,7 @@ var $container = document.querySelector('#map');
 var map = new google.maps.Map($container, options);
 
 draw({
-  map: map
+  map: map,
+  position: google.maps.ControlPosition.TOP_LEFT,
+  orientation: 'vertical'
 });
