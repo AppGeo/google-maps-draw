@@ -5,11 +5,11 @@ var options = {
   center: new google.maps.LatLng(49.4966, -66.7968)
 };
 
-var draw = window.googleMapsDraw;
+var Draw = window.googleMapsDraw;
 var $container = document.querySelector('#map');
 var map = new google.maps.Map($container, options);
 
-draw({
+new Draw({
   map: map,
   position: google.maps.ControlPosition.TOP_LEFT,
   orientation: 'vertical'
