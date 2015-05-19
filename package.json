@@ -7,7 +7,8 @@
     "lint": "jshint lib",
     "test": "npm run lint && node test | tap-spec",
     "dev": "npm run lint && watchify lib/index.js --debug -s google-maps-draw -t babelify -t lessify -t hbsfy --outfile dist/google-maps-draw.js",
-    "dist": "npm run lint && browserify lib/index.js -s google-maps-draw -t babelify -t lessify -t hbsfy --outfile dist/google-maps-draw.js"
+    "dist": "npm run lint && browserify lib/index.js -s google-maps-draw -t babelify -t lessify -t hbsfy --outfile dist/google-maps-draw.js",
+    "preview": "goat -e test/index.html ./dist:/dist"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
     "contextify": "^0.1.13",
+    "goat": "^0.4.2",
     "handlebars": "^1.3.0",
     "hbsfy": "^2.2.1",
     "jsdom": "^3.1.2",

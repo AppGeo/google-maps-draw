@@ -12,4 +12,4 @@ npm run dist
 npm test
 ```
 
-To preview it in action, open `test/index.html` after building.
+To preview it in action, open `test/index.html` after building or use `npm run preview`.

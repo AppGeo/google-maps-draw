@@ -1,13 +1,9 @@
 <div class="shape-infowindow">
   <ul>
-    <li>
-      <a href="#" class="trigger-action" data-action-id="move">Move</a>
-    </li>
-    <li>
-      <a href="#" class="trigger-action" data-action-id="scale">Scale</a>
-    </li>
-    <li>
-      <a href="#" class="trigger-action" data-action-id="delete">Delete</a>
-    </li>
+    {{#each actions}}
+      <li>
+        <a href="#" class="trigger-action" data-action-id="{{id}}">{{name}}</a>
+      </li>
+    {{/each}}
   </ul>
 </div>
